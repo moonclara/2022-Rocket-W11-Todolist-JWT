@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .tab--active {
+    @apply !border-b-2 !border-secondary !text-secondary;
+  }
+  /* .tab__content {
+    @apply hidden;
+  } */
+
+  .tab__content--active {
+    @apply block;
+  }
+
+  .bgLinear {
+    background: linear-gradient(
+      172.7deg,
+      #ffd370 5.12%,
+      #ffd370 53.33%,
+      #ffd370 53.44%,
+      #ffffff 53.45%,
+      #ffffff 94.32%
+    );
+  }
+
+  .deleted {
+    text-decoration: line-through;
+    color: #9f9a91;
+  }
+  
+  .confirm-finished {
+    background-image: url(./images/check.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    padding-right: 20px;
+  }
+
+
+}

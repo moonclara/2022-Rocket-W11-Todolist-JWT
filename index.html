@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <title>Todolist JWT</title>
+</head>
+
+
+<body class="bg-primary h-[100vh] font-sans flex items-center justify-center">
+    <section>
+        <div class="container ">
+            <div class="flex space-x-[106px] justify-center items-center ">
+                <img src="./dist/images/home.svg" alt="home">
+                <form class="loginForm space-y-6 flex flex-col items-center">
+                    <h2 class="text-2xl text-secondary font-bold">最實用的線上待辦事項服務</h2>
+
+                    <div class="space-y-4">
+                        <label class="block">
+                            <span class="block text-sm font-bold text-secondary mb-1">Email</span>
+                            <input type="text"
+                                class="loginEmail placeholder-secondaryLight rounded-[10px] w-[304px] h-[47px] px-4 mb-1"
+                                placeholder="請輸入 Email" />
+                            <p class="warnLoginEmail hidden text-sm font-bold text-warning">您填入的信箱資料有誤</p>
+                        </label>
+                        <label class="block">
+                            <span class="block text-sm font-bold text-secondary mb-1">密碼</span>
+                            <input type="password"
+                                class="loginPassword placeholder-secondaryLight rounded-[10px] w-[304px] h-[47px] px-4 mb-1"
+                                placeholder="請輸入密碼" />
+                            <p class="warnLoginEmail hidden text-sm font-bold text-warning">密碼長度不得少於6個字元</p>
+                        </label>
+                    </div>
+
+                    <div class="space-y-6">
+                        <button
+                            class="loginBtn block bg-secondary hover:bg-black text-white font-bold py-3 rounded-[10px] w-[128px]">
+                            登入
+                        </button>
+                        <button
+                            class="goSignUpBtn block text-secondary hover:text-black font-bold rounded-[10px] w-[128px]">
+                            註冊帳號
+                        </button>
+                    </div>
+                </form>
+
+                <form class=" signUpForm hidden space-y-6 flex flex-col items-center">
+                    <h2 class="text-2xl text-secondary font-bold">註冊帳號</h2>
+
+                    <div class="space-y-4">
+                        <label class="block">
+                            <span class="block text-sm font-bold text-secondary mb-1">Email</span>
+                            <input type="text"
+                                class="signUpEmail placeholder-secondaryLight rounded-[10px] w-[304px] h-[47px] px-4 mb-1"
+                                placeholder="請輸入 Email" />
+                            <p class="warnSignUpEmail hidden text-sm font-bold text-warning">您填入的信箱資料有誤</p>
+                        </label>
+                        <label class="block">
+                            <span class="block text-sm font-bold text-secondary mb-1">您的暱稱</span>
+                            <input type="text"
+                                class="signUpNick placeholder-secondaryLight rounded-[10px] w-[304px] h-[47px] px-4 mb-1"
+                                placeholder="請輸入您的暱稱" />
+                            <p class="warnSignUpNick hidden text-sm font-bold text-warning">暱稱不得少於1個字</p>
+                        </label>
+                        <label class="block">
+                            <span class="block text-sm font-bold text-secondary mb-1">密碼</span>
+                            <input type="password"
+                                class="signUpPassword placeholder-secondaryLight rounded-[10px] w-[304px] h-[47px] px-4 mb-1"
+                                placeholder="請輸入密碼" />
+                            <p class="warnSignUpPassword hidden text-sm font-bold text-warning">密碼長度不得少於6個字元</p>
+                        </label>
+                        <label class="block">
+                            <span class="block text-sm font-bold text-secondary mb-1">再次輸入密碼</span>
+                            <input type="password"
+                                class="signUpPasswordAgain placeholder-secondaryLight rounded-[10px] w-[304px] h-[47px] px-4 mb-1"
+                                placeholder="請再次輸入密碼" />
+                            <p class="warnSignUpPasswordAgain hidden text-sm font-bold text-warning">密碼長度不得少於6個字元</p>
+                        </label>
+                    </div>
+
+                    <div class="space-y-6">
+                        <button
+                            class="signUpBtn block bg-secondary hover:bg-black text-white font-bold py-3 rounded-[10px] w-[128px]">
+                            註冊帳號
+                        </button>
+                        <button
+                            class="goLoginBtn block text-secondary hover:text-black font-bold rounded-[10px] w-[128px]">
+                            登入
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
